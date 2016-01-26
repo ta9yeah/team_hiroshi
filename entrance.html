@@ -17,6 +17,8 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/main_my.css" rel="stylesheet">
     <link href="assets/css/signUp_my.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+    <link href="assets/css/login_my.css" rel="stylesheet">
 
 
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -36,25 +38,37 @@
 
   <body>
 
-	<!-- Menu -->
-	<nav class="menu" id="theMenu">
-		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">LINK</a></h1>
-			<i class="fa fa-arrow-right menu-close"></i>
-			<a href="index.html">Home</a>
-			<a href="services.html">Services</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="about.html">About</a>
-			<a href="#contact">Contact</a>
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-dribbble"></i></a>
-			<a href="#"><i class="fa fa-envelope"></i></a>
+	<!-- Header Menu  -->
+	<header>
+		<div class="row">
+			<div class="col-sm-4 nav-left">
+				<a href="#">ABOUT US</a>
+			</div>
+			<div class="col-sm-4 nav-center">
+				LOGO
+			</div>
+			<div class="col-sm-4 nav-right">
+				<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+			</div>
 		</div>
-		
-		<!-- Menu button -->
-		<div id="menuToggle"><i class="fa fa-bars"></i></div>
-	</nav>
+	</header><!-- end header nav -->
+
+	<!-- logIn form -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="loginmodal-container">
+				<h1>Login to Your Account</h1><br>
+				<form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				</form>
+				<div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				</div><!-- end login-help -->
+			</div><!-- end loginmodal-container -->
+		</div><!-- end modal-dialog -->
+	</div><!-- end login form -->
 	
 	<!-- MAIN IMAGE SECTION -->
 	<div id="headerwrap">
@@ -200,7 +214,7 @@
 					
 				</div>
 				<div class="col-lg-4 dg">
-					
+
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
