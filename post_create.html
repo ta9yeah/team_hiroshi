@@ -98,7 +98,7 @@
 							<div class="form-group">
 								<label class=" control-label" for="startdate">Match day</label>  
 								<div class="">
-									<input id="startdate" name="startdate" placeholder="year/month/day" class="form-control input-md" type="date" value="year/month/day">
+									<input id="startdate" name="startdate" class="form-control input-md" type="date" required>
 								</div>
 							</div>
 							<!-- start time -->
@@ -119,24 +119,24 @@
 							<div class="form-group">
 								<label class=" control-label" for="deadline">Dead line</label>  
 								<div class="">
-									<input id="deadline" name="deadline" class="form-control input-md" type="date" step="900" value="12:00" required>
+									<input id="deadline" name="deadline" class="form-control input-md" type="date" step="900" value="" required>
 								</div>
 								<div class="">
-									<input id="deadtime" name="deadtime" class="form-control input-md" step="900" value=''  type="time" required>
+									<input id="deadtime" name="deadtime" class="form-control input-md" type="time" step="900" value="" required>
 								</div>
 							</div>
 							<!-- Search input-->
 							<div class="form-group">
 								<label class=" control-label" for="matchtitle">Match title</label>
 								<div class="">
-									<input id="matchtitle" name="titile" placeholder="match title" class="form-control input-md" type="text" required>
+									<input id="matchtitle" name="titile" class="form-control input-md" type="text" placeholder="match title" required>
 								</div>
 							</div>
 							<!-- comment match -->
 							<div class="form-group">
 								<label class=" control-label" for="comment">comment</label>
 								<div class="">                     
-									<textarea class="form-control" id="comment" name="comment" required>tell us details</textarea>
+									<textarea id="comment" name="comment" class="form-control" required>tell us details</textarea>
 								</div>
 							</div>
 							<!-- Match type (inline\) -->
@@ -144,15 +144,15 @@
 								<label class=" control-label" for="radios">match type</label>
 								<div class=""> 
 									<label class="radio-inline" for="radios-0">
-										<input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+										<input id="radios-0" name="radios" type="radio" value="1" checked="checked">
 										Just training
 									</label> 
 									<label class="radio-inline" for="radios-1">
-										<input name="radios" id="radios-1" value="2" type="radio">
+										<input id="radios-1" name="radios" type="radio" value="2">
 										A practice game
 									</label> 
 									<label class="radio-inline" for="radios-2">
-										<input name="radios" id="radios-2" value="3" type="radio">
+										<input id="radios-2" name="radios" type="radio" value="3" >
 										A match
 									</label> 
 								</div>
@@ -162,38 +162,45 @@
 								<label class=" control-label" for="level">match type</label>
 								<div class=""> 
 									<label class="radio-inline" for="level-0">
-										<input name="level" id="level-0" value="1" checked="checked" type="radio">
+										<input id="level-0" name="level" type="radio" value="1" checked="checked" >
 										easy
 									</label> 
 									<label class="radio-inline" for="level-1">
-										<input name="level" id="level-1" value="2" type="radio">
+										<input id="level-1" name="level" type="radio" value="2" >
 										so so
 									</label> 
 									<label class="radio-inline" for="level-2">
-										<input name="level" id="level-2" value="3" type="radio">
+										<input id="level-2" name="level" type="radio" value="3" >
 										mid
 									</label>
 									<label class="radio-inline" for="level-3">
-										<input name="level" id="level-3" value="4" type="radio">
+										<input id="level-3" name="level" type="radio" value="4" >
 										high mid
 									</label>
 									<label class="radio-inline" for="level-4">
-										<input name="level" id="level-4" value="5" type="radio">
+										<input id="level-4" name="level" type="radio" value="5" >
 										high
 									</label>
+								</div>
+							</div>
+							<!-- how many player -->
+							<div class="form-group">
+								<label class=" control-label" for="people">How many player do you want?</label>  
+								<div class="">
+									<input id="people" name="people" class="form-control input-md" type="number" min="1" max="500" placeholder="how many?" value="12:00" required>
 								</div>
 							</div>
 							<!-- address -->
 							<div class="form-group">
 								<label class=" control-label" for="placename">Where</label>
 								<div class="">
-									<input id="placename" name="placename" placeholder="where" class="form-control input-md" type="text" required>
+									<input id="placename" name="placename" class="form-control input-md" type="text" placeholder="where" required>
 								</div>
 							</div>
 							<div class="form-group">
 								<label class=" control-label" for="address">Address</label>
 								<div class="">
-									<input id="address" name="address" placeholder="address" class="form-control input-md" type="text" required>
+									<input id="address" name="address" class="form-control input-md" type="text" placeholder="address" required>
 								</div>
 							</div>
 
@@ -201,11 +208,11 @@
 								<label class=" control-label" for="radios">place type</label>
 								<div class=""> 
 									<label class="radio-inline" for="placetype-0">
-										<input name="placetype" id="placetype-0" value="1" checked="checked" type="radio">
+										<input id="placetype-0" name="placetype" type="radio" value="1" checked="checked">
 										Inside
 									</label> 
 									<label class="radio-inline" for="placetype-1">
-										<input name="placetype" id="placetype-1" value="2" type="radio">
+										<input id="placetype-1" name="placetype" type="radio" value="2">
 										Outside
 									</label> 
 								</div>
@@ -221,7 +228,7 @@
 							<div class="form-group">
 								<div class="">
 									<p>注意事項</p>
-									<input type="submit" value="CREATE" class="btn btn-primary">
+									<input type="submit" class="btn btn-primary" value="CREATE">
 								</div>
 							</div>
 							
